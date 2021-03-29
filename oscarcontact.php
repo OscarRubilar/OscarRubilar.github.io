@@ -1,10 +1,7 @@
 <?php
 
-if(!isset($_POST['submit']))
-{
-	//This page should not be accessed directly. Need to submit the form.
-	echo "error; you need to submit the form!";
-}
+	//Input from form
+
   $name = $_POST['name'];
   $visitor_email = $_POST['email'];
   $subject = $_POST['subject'];
@@ -24,24 +21,26 @@ if(!isset($_POST['submit']))
   }
 
   //Composing message
-	$email_from = 'yourname@yourwebsite.com';
+	$email_from = 'o.rubilar.conductor@outlook.de';
 
 	$email_subject = "A message from your webpage";
 
-	$email_body = "You have received a new message from the user $name.\n".
+	$email_body = "You have received a new message from $name, ($visitor_email).\n To reply, just reply to this message.\n".
                             "Subject: $subject.\n".
-                            "Here is the message:\n $message".
+                            "Here is the message:\n $message\r\n".
 
 //Sending message
-  $to = "oscar.rubilar7@gmail.com";
 
-  $headers = "From: $email_from \r\n";
+    $to = "marcos.stuardo@post.cz";
 
-  $headers .= "Reply-To: $visitor_email \r\n";
+    $headers = "From: $email_from \r\n";
+
+    $headers = "Reply-To: \n $visitor_email \r\n";
+
+    $sent = mail($to,$email_subject,$email_body,$headers);
 
 //Sending!!
 
-  mail($to,$email_subject,$email_body,$headers);
 
   //Don't you dare to spam me!
 
@@ -66,4 +65,5 @@ if(!isset($_POST['submit']))
       return false;
     }
   }
-  ?>
+
+	#Thank user or notify them of a problem

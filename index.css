@@ -410,8 +410,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #009970;
-  border: 2px solid #009970;
+  background: #e76d64;
+  border: 2px solid white;
 }
 
 @media (min-width: 1024px) {
@@ -506,6 +506,7 @@ section {
     position:absolute;
     left: 50%;
     top: 50%;
+    opacity: 0.6;
     /* The following will size the video to fit the full container. Not necessary, just nice.*/
     min-width: 100%;
     min-height: 100%;
@@ -533,6 +534,18 @@ section {
   font-size: 24px;
   color: #dfdee4;
 }
+.bio .one {
+  padding-top: 70px;
+}
+.bio .content p {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 19px;
+  color: #dfdee4;
+}
 
 .bio .content ul {
   list-style: none;
@@ -553,7 +566,7 @@ section {
 }
 
 .bio .content p:last-child {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 0;
   color: #dfdee4;
 }
@@ -1445,10 +1458,28 @@ section {
   color: #444444;
 }
 
+#socialmenteindex .social-links a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 36px;
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  line-height: 1;
+  padding: 11px 0px;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 62px;
+  height: 62px;
+  transition: 0.3s;
+}
+
 #socialmente .social-links a {
   font-size: 36px;
   display: inline-block;
-  background: #333;
+  background-color: black;
   color: #fff;
   line-height: 1;
   padding: 11px 0px;

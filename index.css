@@ -496,18 +496,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Bio
+# Bio Section
 --------------------------------------------------------------*/
 #biobody {
   background-color: black;
 }
 
-#musicvideo video {
+#musicvideo video{
     position:absolute;
     left: 50%;
     top: 50%;
     opacity: 0.6;
-    /* The following will size the video to fit the full container. Not necessary, just nice.*/
     min-width: 100%;
     min-height: 100%;
     -webkit-transform: translate(-50%,-50%);
@@ -516,6 +515,17 @@ section {
     transform: translate(-50%,-50%);
     z-index: -1;
     object-fit: cover;
+}
+.imgForMobile {
+  display:none;
+}
+@media only screen and (max-width: 940px) {
+  .musicvideo {
+    display: none;
+  }
+  .imgForMobile {
+    display:block;
+  }
 }
 
 .bio .content h2 {
@@ -571,6 +581,22 @@ section {
   color: #dfdee4;
 }
 
+@media (max-width: 768px) {
+  #bio {
+    height: 100vh;
+  }
+  #bio .container {
+    padding-top: 60px;
+  }
+  #bio h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #bio p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
 /*--------------------------------------------------------------
 # Music
 --------------------------------------------------------------*/

@@ -504,8 +504,8 @@ section {
 
 #musicvideo video{
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 100%;
+    top: 100%;
     opacity: 0.6;
     width: 100%;
     height: 100%;
@@ -586,9 +586,6 @@ section {
     font-size: 12px;
     line-height: 13px;
   }
-  /* #musicvideo .container{
-    display: none !important;
-  } */
 }
 /*--------------------------------------------------------------
 # Music

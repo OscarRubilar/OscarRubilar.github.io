@@ -586,9 +586,9 @@ section {
     font-size: 12px;
     line-height: 13px;
   }
-  #musicvideo .container{
+  /* #musicvideo .container{
     display: none !important;
-  }
+  } */
 }
 /*--------------------------------------------------------------
 # Music

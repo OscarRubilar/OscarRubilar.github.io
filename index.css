@@ -415,6 +415,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #e76d64;
   border: 2px solid white;
 }
+#stuardoindex {
+  color: #eee;
+  padding-top: 30px;
+  font-size: 11px;
+}
 
 @media (min-width: 1024px) {
   #hero {

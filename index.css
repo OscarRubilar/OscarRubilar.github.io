@@ -650,6 +650,9 @@ color: #dfdee4;
   display:inline-block
 }
 
+#enLinea {
+  display: none;
+}
 #ListVideos{
   display: flex;
   padding-top: 60px;
@@ -680,6 +683,10 @@ color: #dfdee4;
     font-size: 12px;
     line-height: 13px;
   }
+  #enLinea {
+    display: block;
+  }
+
 }
 
 /*--------------------------------------------------------------

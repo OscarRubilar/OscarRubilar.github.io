@@ -612,10 +612,9 @@ color: #dfdee4;
   padding-top: 70px;
 }
 .videos p {
-  position: relative;
-  margin-bottom: 30px;
+  position: relative;  
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   font-size: 18px;
   color: #dfdee4;
 }
@@ -660,6 +659,8 @@ color: #dfdee4;
   padding-right: 200px;
   padding-bottom: 60px; */
 }
+
+
 
 @media (max-width: 768px) {
   #space {

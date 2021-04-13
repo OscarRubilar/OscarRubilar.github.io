@@ -25,13 +25,13 @@
 
 	$email_subject = "A message from your webpage";
 
-	$email_body = "You have received a new message from $name, ($visitor_email).\n To reply, just reply to this message.\n".
+	$email_body = "You have received a new message from $name, ($visitor_email).\n To respond, just reply to this message.\n".
                             "Subject: $subject.\n".
                             "Here is the message:\n $message\r\n".
 
 //Sending message
 
-    $to = "marcos.stuardo@post.cz";
+    $to = "o.rubilar.conductor@outlook.de";
 
     $headers = "From: $email_from \r\n";
 
